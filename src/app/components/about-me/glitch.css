@@ -1,0 +1,17 @@
+.glitch {
+	position: relative;
+	overflow: hidden;
+}
+.glitch img {
+	position: relative;
+	z-index: 1;
+	display: block;
+}
+.glitch__layers {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
