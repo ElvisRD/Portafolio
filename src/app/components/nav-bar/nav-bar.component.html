@@ -1,0 +1,61 @@
+
+<nav class="w-full fixed md:bg-transparent bg-black z-40 ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2 md:p-4">
+    <a href="https://www.instagram.com/_elvisrd_/" class="flex items-center">
+        <img [src]="svgIcon" class="h-8 mr-3" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ElvisRD</span>
+    </a>
+    <button (click)="mostrarMenu()" id="navMenu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-full md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+      <div *ngIf="!menu">
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </div>
+      <div *ngIf="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 50 50"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg>
+      </div>
+    </button>
+    <div class="hidden w-full md:block md:w-auto">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent">
+        <li>
+          <a pageScroll href="#home" class="block py-2 pl-3 pr-4 text-white rounded hover:scale-90 md:border-0 md:p-0 hover:opacity-50 text-xl" aria-current="page">Inicio</a>
+        </li>
+        <li>
+          <a pageScroll href="#aboutMe" class="block py-2 pl-3 pr-4 text-white rounded hover:scale-90 md:border-0 md:p-0 hover:opacity-50 text-xl">QuienSoy</a>
+        </li>
+        <li>
+          <a pageScroll href="#skills" class="block py-2 pl-3 pr-4 text-white rounded hover:scale-90 md:border-0 md:p-0 hover:opacity-50 text-xl">Conocimiento</a>
+        </li>
+        <li>
+          <a pageScroll href="#projects" class="block py-2 pl-3 pr-4 text-white rounded hover:scale-90 md:border-0 md:p-0 hover:opacity-50 text-xl ">Proyectos</a>
+        </li>
+        <li class="h-full flex items-center">
+          <div (click)="playMusic()" *ngIf="!play" class="w-8 h-8 rounded-full cursor-pointer hover:opacity-50">
+            <img [src]="svgPlay" alt="play"><img/> 
+          </div>
+          <div (click)="playMusic()" *ngIf="play" class="w-8 h-8 rounded-full cursor-pointer hover:opacity-50">
+            <img [src]="svgPause" alt="play"><img/> 
+          </div>
+          <audio [volume]="0.3" *ngIf="play" [src]="music" autoplay loop></audio>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="menu" class="w-full md:hidden bg-black opacity-75">
+    <ul class="font-medium flex flex-col px-4 md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent">
+      <li>
+        <a pageScroll href="#home" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Inicio</a>
+      </li>
+      <li>
+        <a pageScroll href="#aboutMe" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">QuienSoy</a>
+      </li>
+      <li>
+        <a pageScroll href="#skills" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Conocimiento</a>
+      </li>
+      <li>
+        <a pageScroll href="#projects" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Proyectos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+

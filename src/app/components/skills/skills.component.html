@@ -1,0 +1,64 @@
+<section id="skills" class="flex w-full relative justify-center min-h-screen bg-backgroundSkills flex-col ">
+    <div data-aos="fade-right" data-aos-duration="1500"  class="w-full xl:hidden mt-10">
+      <h1 class="text-4xl xs:text-5xl md:text-6xl text-center text-gray-200">Tecnologías</h1>
+    </div>
+    <div class="flex w-full flex-row">
+      <div class="flex w-full xl:w-8/12 flex-col">
+        <div data-aos="fade-right" data-aos-duration="1500" class="w-full hidden xl:flex justify-center mt-16">
+          <h1 class="md:text-6xl text-center text-gray-200">Tecnologías</h1>
+        </div>
+        <div class="grid w-full grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 mb-20 mt-8 justify-center">
+          <div class="w-full flex justify-center">
+            <div class="flex w-32 lg:w-10/12 mt-8 flex-col">
+              <div class="w-full flex justify-center lg:justify-start mt-2">
+                <h2 class="text-2xl xs:text-3xl text-gray-200">Frontend</h2>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="1500" class="flex p-4 w-full mt-4 rounded-md flex-col lg:flex-row border-2 min-h-0 xs:min-h-69 lg:min-h-0 border-gray-300 justify-start items-center">
+                  <app-icon-tech urlSvg="frontend/angular.svg" url="https://angular.io/" nameTech="Angular" ></app-icon-tech>
+                  <app-icon-tech urlSvg="frontend/typescript.svg" ml="lg:ml-6 mt-6" url="https://www.typescriptlang.org/" nameTech="TypeScript" ></app-icon-tech>
+                  <app-icon-tech urlSvg="frontend/css.svg" ml="lg:ml-6 mt-6" url="https://www.typescriptlang.org/" nameTech="CSS" ></app-icon-tech>
+                  <app-icon-tech urlSvg="frontend/html.svg" ml="lg:ml-6 mt-6" url="https://html.com/" nameTech="HTML" ></app-icon-tech>
+                  <app-icon-tech urlSvg="frontend/javascript.svg" ml="lg:ml-6 mt-6" url="https://www.javascript.com/" nameTech="JavaScript" ></app-icon-tech>
+                  <app-icon-tech urlSvg="frontend/react.svg" ml="lg:ml-6 mt-6" url="https://es.react.dev/" nameTech="React" ></app-icon-tech>
+                  <app-icon-tech urlSvg="frontend/tailwind.svg" ml="lg:ml-6 mt-6" url="https://tailwindcss.com/" nameTech="Tailwind"></app-icon-tech>
+                  <app-icon-tech urlSvg="frontend/materialui.svg" ml="lg:ml-6 mt-6" url="https://mui.com/" nameTech="MaterialUI"></app-icon-tech>
+              </div>
+          </div>
+          </div>
+            <div class="flex w-full justify-center">
+              <div class="flex w-32 lg:w-10/12 mt-8 flex-col">
+                <div class="w-full flex justify-center lg:justify-start mt-2">
+                  <h2 class="text-2xl xs:text-3xl text-gray-200">Backend</h2>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500" class="flex p-4 w-full mt-4 rounded-md flex-col lg:flex-row min-h-0 xs:min-h-69 lg:min-h-0 border-2 border-gray-300 justify-start items-center">
+                  <app-icon-tech urlSvg="backend/nodejs.svg" url="https://nodejs.org/en" nameTech="NodeJS"></app-icon-tech>
+                  <app-icon-tech urlSvg="backend/prisma.svg" ml="lg:ml-6 mt-6" url="https://prisma.io/" nameTech="Prisma"></app-icon-tech>
+                  <app-icon-tech urlSvg="backend/socketio.svg" ml="lg:ml-6 mt-6" url="https://socket.io/" nameTech="SocketIO"></app-icon-tech>
+                  <app-icon-tech urlSvg="backend/mysql.svg" ml="lg:ml-6 mt-6" url="https://www.mysql.com/" nameTech="MySQL"></app-icon-tech>
+                </div>
+              </div>
+          </div>
+            <div class="flex w-full col-span-1 xs:col-span-2 sm:col-span-1 justify-center">
+              <div class="flex w-32 lg:w-10/12 mt-8 flex-col">
+                <div class="w-full mt-2 flex justify-center lg:justify-start">
+                  <h2 class="text-2xl sm:text-3xl text-gray-200 ">Tools</h2>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1500" class="flex p-4 w-full mt-4 rounded-md flex-col lg:flex-row min-h-0 sm:min-h-69 lg:min-h-0  border-2 border-gray-300 justify-start items-center">
+                  <app-icon-tech urlSvg="tools/vscode.svg" url="https://code.visualstudio.com/" nameTech="VScode"></app-icon-tech>
+                  <app-icon-tech urlSvg="tools/git.svg" ml="lg:ml-6 mt-6" url="https://git-scm.com/" nameTech="Git"></app-icon-tech>
+                  <app-icon-tech urlSvg="tools/github.svg" ml="lg:ml-6 mt-6" url="https://github.com/" nameTech="Github"></app-icon-tech>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="flex w-0 xl:w-5/12 justify-center items-center">
+        <div class="flex w-full justify-center">
+          <div data-aos="fade-up" data-aos-duration="1500" class="relative">
+            <div class="absolute w-full h-full bg-huecoSkills z-10 rounded-lg top-4 right-7"></div>
+              <img (mouseenter)="moverImg()" (mouseleave)="guardarImg()" class="relative rounded-lg z-30 grayscale " src="https://images.unsplash.com/photo-1608306448197-	e83633f1261c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=450&q=80" [@animacionImg]="animation_guardarImg" 		alt="programacion"> 
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
