@@ -4,7 +4,7 @@ import { DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./css/home.component.css','./css/animationImgs.css']
 })
 export class HomeComponent {
   constructor(private sanitizer: DomSanitizer) {}

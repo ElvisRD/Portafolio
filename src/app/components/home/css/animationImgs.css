@@ -1,0 +1,46 @@
+
+.fondoInicio{
+  background-color: #0e1116;
+}
+.imgCyborg{
+  background-image: url("../../../../assets/imgs/home/cyborg.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateX(-1.5%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  animation: moveCyborg 14s infinite linear;
+}
+
+@keyframes moveCyborg{
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50%{
+    transform: translateX(-1.5%);
+  }
+}
+
+.imgLuz{
+  background-image: url("../../../../assets/imgs/home/luz.png");
+  background-position: bottom;
+  background-size: cover;
+  position: fixed;
+  background-repeat: no-repeat;
+  transform: translateX(-1%);
+  left: 0;
+  top: 0;
+  animation: moveLuz 14s infinite linear;
+}
+
+@keyframes moveLuz {
+  0%, 100% {
+    transform: translateX(0%) scale(1);
+  }
+  50% {
+    transform: translateX(-2%) scale(1.02); 
+  }
+}
+
