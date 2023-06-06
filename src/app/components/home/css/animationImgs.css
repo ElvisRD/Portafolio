@@ -64,24 +64,3 @@
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
 }
-
-.layers {
-  position: relative;
-}
-
-.layers::before,
-.layers::after {
-  content: attr(data-text);
-  position: absolute;
-  z-index: -1;
-}
-
-.layers::before {
-  top: 10px;
-  color: #e0287d;
-}
-
-.layers::after {
-  top: 5px;
-  color: #1bc7fb;
-}
