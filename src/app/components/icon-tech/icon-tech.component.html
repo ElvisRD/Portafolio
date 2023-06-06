@@ -1,6 +1,7 @@
 <a class="relative h-full" [href]="url" target="_blank" rel="noopener noreferrer">
     <div class="{{ml}} ml-0 lg:mt-0 w-12 h-12 flex items-center justify-center">
       <p [@ocultarIcon]="animation_textoIcon" class="absolute opacity-0 text-gray-200 text-sm text-center">{{nameTech}}</p>
-      <img (mouseenter)="ocultarIcon()" (mouseleave)="mostrarIcon()" [@ocultarIcon]="animation_Icon" class="relative" [src]="svgIcon" width="50" alt="Icono SVG"> 
+      <img (mouseenter)="ocultarIcon()" (mouseleave)="mostrarIcon()" [@ocultarIcon]="animation_Icon" class="relative hidden sm:block" [src]="svgIcon" width="50" alt="Icono SVG"> 
+      <img class="relative sm:hidden" [src]="svgIcon" width="50" alt="Icono SVG"> 
     </div>
 </a>

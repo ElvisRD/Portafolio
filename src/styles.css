@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "SansPro";
+  src: url("./assets/fonts/SourceSansPro-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Light.ttf");
+}
+
+h1 {
+  font-family: "SansPro";
+  font-size: 3rem;
+  font-weight: 600;
+}
+h2 {
+  font-family: "SansPro";
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+a {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+section a {
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+button {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  font-weight: 300;
+}

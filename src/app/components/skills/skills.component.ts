@@ -21,6 +21,5 @@ export class SkillsComponent {
     this.animation_guardarImg = 'start';
   }
 
-  svgIcon: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/background/cerebro.svg');
 }
 

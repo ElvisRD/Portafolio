@@ -1,6 +1,13 @@
 <div data-aos="fade-up" data-aos-duration="1500" class="flex justify-center">
   <div class="xxs:max-w-xxs xs:max-w-xs sm:max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
-    <a href="#" class="w-full">
+    <a *ngIf="link" href="link" class="w-full">
+      <div class="w-full h-64 flex items-center bg-black justify-center">
+        <div class="glitch justify-center flex" data-text="En Desarrollo...">
+            En Desarrollo...
+        </div>
+      </div>
+    </a>
+    <a *ngIf="!link" class="w-full">
       <div class="w-full h-64 flex items-center bg-black justify-center">
         <div class="glitch justify-center flex" data-text="En Desarrollo...">
             En Desarrollo...
@@ -8,16 +15,25 @@
       </div>
     </a>
     <div class="p-5">
-        <a [href]="link">
+        <a *ngIf="!link">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200">{{titleApp}}</h5>
+        </a>
+        <a *ngIf="link" [href]="link">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200">{{titleApp}}</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{description}}</p>
         <div class="w-full h-0.5 bg-gray-400"></div>
         <div class="flex w-full justify-around mt-4">
-          <a href="#" class="bg-black hover:bg-blue-700 text-gray-200 font-bold py-2 px-4 rounded">
+          <a *ngIf="linkGithub" [href]="linkGithub" class="bg-gray-700 cursor-pointer text-xl text-gray-200 py-2 px-4 rounded textButtonProjects">
             Código
           </a>
-          <a href="#" class="bg-black hover:bg-blue-700 text-gray-200 font-bold py-2 px-4 rounded" >
+          <a *ngIf="!linkGithub" class="bg-gray-900 cursor-default text-xl text-gray-200 py-2 px-4 rounded textButtonProjects">
+            Código
+          </a>
+          <a *ngIf="link" [href]="link" class="bg-black text-xl cursor-pointer text-gray-200 py-2 px-4 rounded textButtonProjects">
+            Demo
+          </a>
+          <a *ngIf="!link" class="bg-gray-900 text-xl cursor-default text-gray-200 py-2 px-4 rounded textButtonProjects">
             Demo
           </a>
         </div>
