@@ -2,8 +2,9 @@
 .fondoInicio{
   background-color: #0e1116;
 }
+
 .imgCyborg{
-  background-image: url("../../../../assets/imgs/home/cyborg.png");
+  background-image: url("../../../../assets/imgs/home/cyborg.webp");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,7 +25,7 @@
 }
 
 .imgLuz{
-  background-image: url("../../../../assets/imgs/home/luz.png");
+  background-image: url("../../../../assets/imgs/home/luz.webp");
   background-position: bottom;
   background-size: cover;
   position: fixed;
@@ -37,14 +38,14 @@
 
 @keyframes moveLuz {
   0%, 100% {
-    transform: translateX(0%) scale(1);
+    transform: translateX(0%)
   }
   50% {
-    transform: translateX(-2%) scale(1.02); 
+    transform: translateX(-2.5%)
   }
 }
 
-.heroTitle {
+.titleHome {
   line-height: 1;
   display: inline-block;
   color: #fff;
@@ -54,7 +55,7 @@
   filter: drop-shadow(0 1px 3px);
 }
 
-.heroSubtitle {
+.subtitleHome {
   line-height: 1;
   display: inline-block;
   color: #fff;

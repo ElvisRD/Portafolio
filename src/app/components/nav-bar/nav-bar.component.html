@@ -2,7 +2,7 @@
 <nav class="w-full fixed md:bg-transparent bg-black z-40 ">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2 md:p-4">
     <a href="https://www.instagram.com/_elvisrd_/" class="flex items-center">
-        <img [src]="svgIcon" class="h-8 mr-3" alt="Flowbite Logo" />
+        <img [src]="svgIcon" class="h-8 mr-3" width="auto" height="auto" alt="Flowbite Logo" />
         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ElvisRD</span>
     </a>
     <button (click)="mostrarMenu()" id="navMenu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-full md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -16,7 +16,6 @@
     <div class="hidden w-full md:block md:w-auto">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent">
         <li>
-        
           <a pageScroll href="#home" class="block py-2 pl-3 pr-4 text-white rounded hover:scale-90 md:border-0 md:p-0 hover:opacity-50 text-xl" aria-current="page">Inicio</a>
         </li>
         <li>
@@ -27,16 +26,6 @@
         </li>
         <li>
           <a pageScroll href="#projects" class="block py-2 pl-3 pr-4 text-white rounded hover:scale-90 md:border-0 md:p-0 hover:opacity-50 text-xl ">Proyectos</a>
-        </li>
-        <li class="h-full flex items-center">
-          <div (click)="playMusic()" *ngIf="!play" class="w-8 h-8 rounded-full cursor-pointer hover:opacity-50">
-            <img [src]="svgPlay" alt="play"><img/> 
-          </div>
-          <div (click)="playMusic()" *ngIf="play" class="w-8 h-8 rounded-full cursor-pointer hover:opacity-50">
-            <img [src]="svgPause" alt="play"><img/> 
-          </div>
-          <audio [volume]="0.3" *ngIf="play" [src]="music" autoplay loop></audio>
-        </li>
       </ul>
     </div>
   </div>
@@ -57,6 +46,7 @@
     </ul>
   </div>
 </nav>
+
 
 
 
