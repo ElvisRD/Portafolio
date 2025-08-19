@@ -9,4 +9,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class AboutMeComponent {
   constructor(private sanitizer: DomSanitizer) {}
   foto: SafeResourceUrl = this.sanitizer.bypassSecurityTrustResourceUrl('assets/imgs/foto.jpg');
+
+
+  downloadArchive() {
+    const link = document.createElement('a');
+    link.href = 'assets/docs/CV_Elvis_Rodriguez.pdf';
+    link.download = 'CV_Elvis_Rodriguez.pdf';
+    link.click();
+  }
 }
